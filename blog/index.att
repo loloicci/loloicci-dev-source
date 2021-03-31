@@ -1,0 +1,47 @@
+---
+pages: {}
+headers:
+  blog: "blog"
+---
+<html>
+  <head>
+    <title>{page.header.title} - loloicci.dev</title>
+    <meta name="description" content="{page.header.description}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <link rel="shortcut icon" href="/style/icon.ico">
+    <link rel="stylesheet" href="/style/pico-classless.css">
+  </head>
+  <body>
+    <header>
+      <h1>loloicci.dev</h1>
+      <span>loloicci.dev -> blog</span>
+      <nav>
+        <ul>
+          <li>Links:</li>
+          <li><a href="/">Top</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        {page.body}
+      </article>
+
+      <article>
+        <h2>Articles</h2>
+        <ul>
+          {{ for e in headers.blog }}
+          <li>
+            <a href="{e.path}">{e.title}</a> - ({e.created_at})<br>
+            {e.description}
+          </li>
+          {{ endfor }}
+        </ul>
+      </article>
+    </main>
+    <footer>
+      Author: loloicci<br>
+      Twitter: <a href="https://twitter.com/loloicci">@loloicci</a> / GitHub: <a href="https://github.com/loloicci">loloicci</a>
+    </footer>
+  </body>
+</html>
