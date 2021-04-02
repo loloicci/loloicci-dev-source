@@ -23,17 +23,18 @@ headers: {}
       </nav>
     </header>
     <main>
-      <h2>{page.header.title}</h2>
-      <p>
-        {page.header.description}
-      </p>
+      <article>
+        <h2>{page.header.title}</h2>
+        <p>
+          {page.header.description}
+        </p>
 
-      {page.body}
+        {page.body}
 
-      <p>Created at {page.header.created_at}, Last Modified at {page.header.modified_at}</p>
-      <h6>Report Issue By</h6>
-      <small><a href="https://github.com/loloicci/loloicci-dev-source/issues/new">GitHub Issue</a> / <a href="https://github.com/loloicci/loloicci-dev-source/edit/master{page.header.path_md}">GitHub Pull Request</a></small>
-
+        <p>Created at {page.header.created_at}, Last Modified at {page.header.modified_at}</p>
+        <h6>Report Issue By</h6>
+        <small><a href="https://github.com/loloicci/loloicci-dev-source/issues/new">GitHub Issue</a> / <a href="https://github.com/loloicci/loloicci-dev-source/edit/master{page.header.path_md}">GitHub Pull Request</a></small>
+      </article>
     </main>
     <footer>
       Author: loloicci<br>
