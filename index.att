@@ -2,14 +2,13 @@
 pages: {}
 headers:
   blog: "blog"
+templates:
+  head: "templates/head.att"
+  contacts: "templates/contacts.att"
 ---
 <html>
   <head>
-    <title>{page.header.title}</title>
-    <meta name="description" content="{page.header.description}">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <link rel="shortcut icon" href="/style/icon.ico">
-    <link rel="stylesheet" href="/style/pico-classless.css">
+    {{ call head with children.head }}
   </head>
   <body>
     <header>
@@ -54,18 +53,14 @@ headers:
 
         <h3>Contacts</h3>
         <address>
-          <ul>
-            <li>GitHub: <a href="https://github.com/loloicci">loloicci</a></li>
-            <li>Twitter: <a href="https://twitter.com/loloicci">@loloicci</a></li>
-            <li>Mail: loloicci --atmark-- loloicci.dev</li>
-          </ul>
+          {{ call contacts with children.contacts }}
         </address>
       </article>
     </main>
     <footer>
+      Author: loloicci
       <address>
-        Author: loloicci<br>
-        Twitter: <a href="https://twitter.com/loloicci">@loloicci</a> / GitHub: <a href="https://github.com/loloicci">loloicci</a> / E-Mail: loloicci --atmark-- loloicci.dev
+        {{ call contacts with children.contacts }}
       </address>
     </footer>
   </body>

@@ -1,0 +1,10 @@
+---
+pages: {}
+headers: {}
+templates: {}
+---
+<title>{page.header.title}</title>
+<meta name="description" content="{page.header.description}">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<link rel="shortcut icon" href="/style/icon.ico">
+<link rel="stylesheet" href="/style/pico-classless.css">

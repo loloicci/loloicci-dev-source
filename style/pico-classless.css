@@ -2081,3 +2081,17 @@ body > header > span {
   font-size: 1.125rem;
   font-weight: unset;
 }
+
+body > footer > address > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body > footer > address > ul > li {
+  display: inline;
+}
+
+body > footer > address > ul > li:not(:last-of-type):after {
+  content: ' / ';
+}
