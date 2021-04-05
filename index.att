@@ -53,16 +53,20 @@ headers:
         </ul>
 
         <h3>Contacts</h3>
-        <ul>
-          <li>GitHub: <a href="https://github.com/loloicci">loloicci</a></li>
-          <li>Twitter: <a href="https://twitter.com/loloicci">@loloicci</a></li>
-          <li>Mail: oxisccl --atmark-- gmail.com</li>
-        </ul>
+        <address>
+          <ul>
+            <li>GitHub: <a href="https://github.com/loloicci">loloicci</a></li>
+            <li>Twitter: <a href="https://twitter.com/loloicci">@loloicci</a></li>
+            <li>Mail: loloicci --atmark-- loloicci.dev</li>
+          </ul>
+        </address>
       </article>
     </main>
     <footer>
-      Author: loloicci<br>
-      Twitter: <a href="https://twitter.com/loloicci">@loloicci</a> / GitHub: <a href="https://github.com/loloicci">loloicci</a>
+      <address>
+        Author: loloicci<br>
+        Twitter: <a href="https://twitter.com/loloicci">@loloicci</a> / GitHub: <a href="https://github.com/loloicci">loloicci</a> / E-Mail: loloicci --atmark-- loloicci.dev
+      </address>
     </footer>
   </body>
 </html>

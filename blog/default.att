@@ -13,7 +13,11 @@ headers: {}
   <body>
     <header>
       <h1>loloicci.dev</h1>
-      <span>loloicci.dev -> blog -> {page.header.title}</span>
+      <ul>
+        <li>loloicci.dev</li>
+        <li>blog</li>
+        <li>{page.header.title}</li>
+      </ul>
       <nav>
         <ul>
           <li>Links:</li>
@@ -37,8 +41,10 @@ headers: {}
       </article>
     </main>
     <footer>
-      Author: loloicci<br>
-      Twitter: <a href="https://twitter.com/loloicci">@loloicci</a> / GitHub: <a href="https://github.com/loloicci">loloicci</a>
+      <address>
+        Author: loloicci<br>
+        Twitter: <a href="https://twitter.com/loloicci">@loloicci</a> / GitHub: <a href="https://github.com/loloicci">loloicci</a> / E-Mail: loloicci --atmark-- loloicci.dev
+      </address>
     </footer>
   </body>
 </html>

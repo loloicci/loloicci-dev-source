@@ -591,13 +591,6 @@ ul ~ h6 {
   margin-top: calc(var(--spacing-typography));
 }
 
-header > span {
-  color: var(--muted-text);
-  font-family: unset;
-  font-size: 1.125rem;
-  font-weight: unset;
-}
-
 p {
   margin-bottom: var(--spacing-typography);
 }
@@ -2062,4 +2055,29 @@ progress:indeterminate::-moz-progress-bar {
     transition-delay: 0s !important;
     transition-duration: 0s !important;
   }
+}
+
+body > header > ul {
+  color: var(--muted-text);
+  font-family: unset;
+  font-size: 1.125rem;
+  font-weight: unset;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+body > header > ul > li {
+  display: inline;
+}
+
+body > header > ul > li:not(:last-of-type):after {
+  content: ' -> ';
+}
+
+body > header > span {
+  color: var(--muted-text);
+  font-family: unset;
+  font-size: 1.125rem;
+  font-weight: unset;
 }
