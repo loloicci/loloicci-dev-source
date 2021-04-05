@@ -23,7 +23,9 @@ headers:
       </nav>
     </header>
     <main>
-      {page.body}
+      <article>
+        {page.body}
+      </article>
 
       <article>
         <h2>Articles</h2>
@@ -32,6 +34,29 @@ headers:
           {{ for e in headers.blog }}
           <li><a href="{e.path}">{e.title}</a> - ({e.created_at})</li>
           {{ endfor }}
+        </ul>
+      </article>
+
+      <article>
+        <h2>loloicci</h2>
+        <p>
+          A Software Engineer at LINE Blockchain Lab.
+        </p>
+
+        <h3>Interested in</h3>
+        <ul>
+          <li>Blockchain</li>
+          <li>TypeSystem</li>
+          <li>Programing Language</li>
+          <li>Nim</li>
+          <li>OSS</li>
+        </ul>
+
+        <h3>Contacts</h3>
+        <ul>
+          <li>GitHub: <a href="https://github.com/loloicci">loloicci</a></li>
+          <li>Twitter: <a href="https://twitter.com/loloicci">@loloicci</a></li>
+          <li>Mail: oxisccl --atmark-- gmail.com</li>
         </ul>
       </article>
     </main>
