@@ -2095,3 +2095,17 @@ body > footer > address > ul > li {
 body > footer > address > ul > li:not(:last-of-type):after {
   content: ' / ';
 }
+
+small > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+small > ul > li {
+  display: inline;
+}
+
+small > ul > li:not(:last-of-type):after {
+  content: ' / ';
+}

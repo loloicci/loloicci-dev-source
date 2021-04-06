@@ -36,7 +36,12 @@ templates:
         {page.body}
 
         <h6>Report Issue By</h6>
-        <small><a href="https://github.com/loloicci/loloicci-dev-source/issues/new">GitHub Issue</a> / <a href="https://github.com/loloicci/loloicci-dev-source/edit/master{page.header.path_md}">GitHub Pull Request</a></small>
+        <small>
+          <ul>
+            <li><a href="https://github.com/loloicci/loloicci-dev-source/issues/new">GitHub Issue</a></li>
+            <li><a href="https://github.com/loloicci/loloicci-dev-source/edit/master{page.header.path_md}">GitHub Pull Request</a></li>
+          </ul>
+        </small>
       </article>
     </main>
     <footer>
