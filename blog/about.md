@@ -3,13 +3,13 @@ title: loloicci.dev に関して
 description: loloicci.dev の構成と GitHub Repository の紹介
 author: loloicci
 created_at: 2021-04-02
-modified_at: 2021-04-03
+modified_at: 2021-04-07
 robots: index,follow
 ---
 
 ### Flat File CMS
 loloicci.dev は自作した Flat-File CMS で管理、生成している。
-開発言語は rust で、CMS 名は "rustatto"。
+CMS の開発言語は rust で、名前は "rustatto"。
 Open にはしていないけど、気が向いたら準備して公開するかも。
 
 ### GitHub
