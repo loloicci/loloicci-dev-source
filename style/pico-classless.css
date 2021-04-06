@@ -2097,6 +2097,7 @@ body > footer > address > ul > li:not(:last-of-type):after {
 }
 
 small > ul {
+  font-size: 85%;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -2108,4 +2109,28 @@ small > ul > li {
 
 small > ul > li:not(:last-of-type):after {
   content: ' / ';
+}
+
+@media (min-width: 576px) {
+  small > ul {
+    font-size: 83%;
+  }
+}
+
+@media (min-width: 768px) {
+  small > ul {
+    font-size: 81%;
+  }
+}
+
+@media (min-width: 992px) {
+  small > ul {
+    font-size: 79%;
+  }
+}
+
+@media (min-width: 1200px) {
+  small > ul {
+    font-size: 77%;
+  }
 }
