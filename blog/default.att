@@ -35,11 +35,12 @@ templates:
 
         {page.body}
 
-        <h6>Report Issue By</h6>
+        <h6>Report Issue Via</h6>
         <small>
           <ul>
             <li><a href="https://github.com/loloicci/loloicci-dev-source/issues/new">GitHub Issue</a></li>
             <li><a href="https://github.com/loloicci/loloicci-dev-source/edit/master{page.header.path_md}">GitHub Pull Request</a></li>
+            <li><a href="https://twitter.com/loloicci">Twitter: @loloicci</a></li>
           </ul>
         </small>
       </article>
