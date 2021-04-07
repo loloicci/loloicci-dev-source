@@ -27,16 +27,6 @@ templates:
       </article>
 
       <article>
-        <h2>Articles</h2>
-        <h3><a href="/blog/">Blog</a></h3>
-        <ul>
-          {{ for e in headers.blog }}
-          <li><a href="{e.path}">{e.title}</a> - ({e.created_at})</li>
-          {{ endfor }}
-        </ul>
-      </article>
-
-      <article>
         <h2>loloicci</h2>
         <p>
           A Software Engineer at LINE Blockchain Lab.
@@ -55,6 +45,16 @@ templates:
         <address>
           {{ call contacts with children.contacts }}
         </address>
+      </article>
+
+      <article>
+        <h2>Articles</h2>
+        <h3><a href="/blog/">Blog</a></h3>
+        <ul>
+          {{ for e in headers.blog }}
+          <li><a href="{e.path}">{e.title}</a> - ({e.created_at})</li>
+          {{ endfor }}
+        </ul>
       </article>
     </main>
     <footer>
