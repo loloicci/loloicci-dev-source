@@ -40,7 +40,7 @@ templates:
           <ul>
             <li><a href="https://github.com/loloicci/loloicci-dev-source/issues/new">GitHub Issue</a></li>
             <li><a href="https://github.com/loloicci/loloicci-dev-source/edit/master{page.header.path_md}">GitHub Pull Request</a></li>
-            <li><a href="https://twitter.com/messages/compose?recipient_id=997497598331174913" data-screen-name="loloicci" data-show-count="false">Twitter DM: @loloicci</a></li>
+            <li><a href="https://twitter.com/messages/compose?recipient_id=997497598331174913" data-screen-name="loloicci" data-show-count="false">Twitter DM to @loloicci</a></li>
           </ul>
         </small>
       </article>
