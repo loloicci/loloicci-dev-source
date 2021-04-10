@@ -30,7 +30,7 @@ github flow でも、v0.2.0 をリリースした後に v0.1.1 を作ったり�
 
 ```Cargo.toml
 [dependency]
-package = { git = "https://github.com/loloicci/cargo-single-package", version = "0.2.0" }
+cargo-single-package = { git = "https://github.com/loloicci/cargo-single-package", version = "0.2.0" }
 ```
 
 `cargo check` を実行。
@@ -58,7 +58,7 @@ version tag の含まれている branch 指定してやると、しっかりと
 
 ```Cargo.toml
 [dependency]
-package = { git = "https://github.com/loloicci/cargo-single-package", version = "0.2.0", branch = "prerelease" }
+cargo-single-package = { git = "https://github.com/loloicci/cargo-single-package", version = "0.2.0", branch = "prerelease" }
 ```
 
 で依存解決できる。
@@ -68,7 +68,7 @@ package = { git = "https://github.com/loloicci/cargo-single-package", version = 
 
 ```Cargo.toml
 [dependency]
-package = { git = "https://github.com/loloicci/cargo-single-package", tag = "v0.2.0" }
+cargo-single-package = { git = "https://github.com/loloicci/cargo-single-package", tag = "v0.2.0" }
 ```
 
 同様に rev, branch (version を指定しない場合は branch の head を使用) も使用できる。
