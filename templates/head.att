@@ -6,5 +6,12 @@ templates: {}
 <title>{page.header.title}</title>
 <meta name="description" content="{page.header.description}">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@loloicci" />
+<meta property="og:url" content="https://loloicci.dev{page.header.path}" />
+<meta property="og:title" content="{page.header.title}" />
+<meta property="og:site_name" content="loloicci.dev" />
+<meta property="og:description" content="{page.header.description}" />
+<meta property="og:image" content="https://loloicci.dev/style/icon.jpg" />
 <link rel="shortcut icon" href="/style/icon.ico">
 <link rel="stylesheet" href="/style/pico-classless.css">
