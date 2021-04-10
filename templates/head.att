@@ -6,6 +6,8 @@ templates: {}
 <title>{page.header.title}</title>
 <meta name="description" content="{page.header.description}">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+<meta name="robots" content="{page.header.robots}">
+<meta name="author" content="{page.header.author}">
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:creator" content="@loloicci" />
 <meta property="og:url" content="https://loloicci.dev{page.header.path}" />
