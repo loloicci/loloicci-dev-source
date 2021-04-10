@@ -1,7 +1,7 @@
 ---
 pages: {}
 headers:
-  blog: "blog"
+  rust: "programming/rust"
 templates:
   head: "templates/head.att"
   contacts: "templates/contacts.att"
@@ -15,12 +15,13 @@ templates:
       <h1>loloicci.dev</h1>
       <ul>
         <li>loloicci.dev</li>
-        <li>blog</li>
+        <li>programming</li>
       </ul>
       <nav>
         <ul>
           <li>Links:</li>
           <li><a href="/">Top</a></li>
+          <li><a href="./rust/">Rust</a></li>
         </ul>
       </nav>
     </header>
@@ -31,8 +32,9 @@ templates:
 
       <article>
         <h2>Articles</h2>
+        <h3><a href="./rust/">Rust</a></h3>
         <ul>
-          {{ for e in headers.blog }}
+          {{ for e in headers.rust }}
             <li>
               <a href="{e.path}">{e.title}</a> ({e.created_at})<br>
               {e.description}

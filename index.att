@@ -2,6 +2,7 @@
 pages: {}
 headers:
   blog: "blog"
+  programming: "programming/summary"
 templates:
   head: "templates/head.att"
   contacts: "templates/contacts.att"
@@ -18,6 +19,7 @@ templates:
         <ul>
           <li>Links:</li>
           <li><a href="/blog/">Blog</a></li>
+          <li><a href="/programming/">Programming</a></li>
         </ul>
       </nav>
     </header>
@@ -52,7 +54,13 @@ templates:
         <h3><a href="/blog/">Blog</a></h3>
         <ul>
           {{ for e in headers.blog }}
-          <li><a href="{e.path}">{e.title}</a> - ({e.created_at})</li>
+            <li><a href="{e.path}">{e.title}</a> ({e.created_at})</li>
+          {{ endfor }}
+        </ul>
+        <h3><a href="/programming/">Programming</a></h3>
+        <ul>
+          {{ for e in headers.programming }}
+            <li><a href="{e.path}">{e.title}</a> ({e.created_at})</li>
           {{ endfor }}
         </ul>
       </article>

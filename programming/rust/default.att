@@ -1,0 +1,56 @@
+---
+pages: {}
+headers: {}
+templates:
+  head: "templates/head.att"
+  contacts: "templates/contacts.att"
+---
+<html>
+  <head>
+    {{ call head with children.head }}
+  </head>
+  <body>
+    <header>
+      <h1>loloicci.dev</h1>
+      <ul>
+        <li>loloicci.dev</li>
+        <li>programming</li>
+        <li>Rust</li>
+        <li>{page.header.title}</li>
+      </ul>
+      <nav>
+        <ul>
+          <li>Links:</li>
+          <li><a href="/">Top</a></li>
+          <li><a href="/programming/">Programming</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <h2>{page.header.title}</h2>
+        <p>
+          {page.header.description}<br>
+          Created at {page.header.created_at}, Last Modified at {page.header.modified_at}
+        </p>
+
+        {page.body}
+
+        <h6>Report Issue Via</h6>
+        <small>
+          <ul>
+            <li><a href="https://github.com/loloicci/loloicci-dev-source/issues/new">GitHub Issue</a></li>
+            <li><a href="https://github.com/loloicci/loloicci-dev-source/edit/master{page.header.path_md}">GitHub Pull Request</a></li>
+            <li><a href="https://twitter.com/messages/compose?recipient_id=997497598331174913" data-screen-name="loloicci" data-show-count="false">Twitter DM to @loloicci</a></li>
+          </ul>
+        </small>
+      </article>
+    </main>
+    <footer>
+      Author: loloicci
+      <address>
+        {{ call contacts with children.contacts }}
+      </address>
+    </footer>
+  </body>
+</html>
