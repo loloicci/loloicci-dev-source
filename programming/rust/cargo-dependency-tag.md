@@ -1,9 +1,10 @@
 ---
-title: Cargo.toml の dependency では main branch 以外にある version を指定できない
-description: Cargo.toml の dependency で version を指定する場合の注意点に関して。主に、version が指す tag と branch の関係に関して。また、main branch にない tag を指定する方法。
+title: |
+  cargo dependency: version のみでは main branch 以外にある tag を指定できない
+description: Cargo.toml の dependency で version を指定する場合の注意点。version が指す tag が main branch にない場合には指定できない。また、その解決策について。
 author: loloicci
 created_at: 2021-04-10
-modified_at: 2021-04-10
+modified_at: 2021-04-11
 robots: index,follow
 ---
 
