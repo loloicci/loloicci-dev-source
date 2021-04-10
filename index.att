@@ -18,8 +18,8 @@ templates:
       <nav>
         <ul>
           <li>Links:</li>
-          <li><a href="/blog/">Blog</a></li>
           <li><a href="/programming/">Programming</a></li>
+          <li><a href="/blog/">Blog</a></li>
         </ul>
       </nav>
     </header>
