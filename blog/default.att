@@ -29,7 +29,6 @@ templates:
       <article>
         <h2>{page.header.title}</h2>
         <p>
-          {page.header.description}<br>
           Created at {page.header.created_at}, Last Modified at {page.header.modified_at}
         </p>
 
