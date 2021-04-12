@@ -4,7 +4,7 @@ title: |
 description: Cargo.toml の dependency で version を指定する場合の注意点。version が指す tag が main branch にない場合には指定できない。また、その解決策について。
 author: loloicci
 created_at: 2021-04-10
-modified_at: 2021-04-11
+modified_at: 2021-04-12
 robots: index,follow
 ---
 
@@ -22,7 +22,7 @@ main branch にない version が指定できないことと、その時のエ�
 
 https://github.com/loloicci/cargo-single-package を依存クレートとして使用する。このクレートは
 - v0.1.0 が branch: master に存在
-- v0.2.0 が branch: prerelease に存在
+- v0.2.0-alpha と v0.2.0 が branch: prerelease に存在
 している。
 こんな状況は github flow で開発を行っていたらまず起こらないわけだが、git flow とかで開発しているとたまに起こり得る。
 github flow でも、v0.2.0 をリリースした後に v0.1.1 を作ったりすると起こりそう。
@@ -54,15 +54,17 @@ required by package `cargo v0.1.0 (/Users/loloiccl/Work/rust/cargo)`
 main branch に存在していない tag を指定する方法もしっかり存在している。
 
 #### version と branch を併記する
-version tag の含まれている branch 指定してやると、しっかりと tag を探してきてくれる。
-
+~~version tag の含まれている branch 指定してやると、しっかりと tag を探してきてくれる。~~  
+branch での指定は branch の head の commit hash を rev として指定した時の挙動と同様らしい。
+そのため、以下の方法では version 0.2.0 は指定できても version 0.2.0-alpha は指定できない。
 
 ```Cargo.toml
 [dependency]
 cargo-single-package = { git = "https://github.com/loloicci/cargo-single-package", version = "0.2.0", branch = "prerelease" }
 ```
 
-で依存解決できる。
+~~で依存解決できる。~~  
+素直に tag を直接指定しよう。
 
 #### tag を直接指定する
 実は cargo は tag を直接指定することもできる。
@@ -72,4 +74,4 @@ cargo-single-package = { git = "https://github.com/loloicci/cargo-single-package
 cargo-single-package = { git = "https://github.com/loloicci/cargo-single-package", tag = "v0.2.0" }
 ```
 
-同様に rev, branch (version を指定しない場合は branch の head を使用) も使用できる。
+同様に rev ~~, branch (version を指定しない場合は branch の head を使用)~~ も使用できる。
