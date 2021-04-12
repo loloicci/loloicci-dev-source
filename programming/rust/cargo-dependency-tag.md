@@ -20,7 +20,7 @@ package = { git = "...", version = "0.2.0" }
 ### 現象例
 main branch にない version が指定できないことと、その時のエラーを見ていく。
 
-https://github.com/loloicci/cargo-single-package を依存クレートとして使用する。このクレートは
+[https://github.com/loloicci/cargo-single-package](https://github.com/loloicci/cargo-single-package) を依存クレートとして使用する。このクレートは
 - v0.1.0 が branch: master に存在
 - v0.2.0-alpha と v0.2.0 が branch: prerelease に存在
 している。
@@ -74,4 +74,7 @@ cargo-single-package = { git = "https://github.com/loloicci/cargo-single-package
 cargo-single-package = { git = "https://github.com/loloicci/cargo-single-package", tag = "v0.2.0" }
 ```
 
-同様に rev ~~, branch (version を指定しない場合は branch の head を使用)~~ も使用できる。
+同様に rev で直接 commit hash を指定する方法 ~~, branch (version を指定しない場合は branch の head を使用)~~ も使用できる。
+
+### 参考
+[https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html#specifying-dependencies-from-git-repositories](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html#specifying-dependencies-from-git-repositories)
