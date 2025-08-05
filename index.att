@@ -31,14 +31,18 @@ templates:
       <article>
         <h2>loloicci</h2>
         <p>
-          A Software Engineer at LINE Blockchain Lab.
+          Software (Android) Engineer at LINEヤフーCorp.<br>
+          Former R&D at LINE Blockchain Lab.
         </p>
 
         <h3>Interested in</h3>
         <ul>
-          <li>Blockchain</li>
+          <li>Android</li>
           <li>TypeSystem</li>
           <li>Programing Language</li>
+          <li>Blockchain</li>
+          <li>kotlin</li>
+          <li>Rust</li>
           <li>Nim</li>
           <li>OSS</li>
         </ul>
