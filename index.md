@@ -1,6 +1,6 @@
 ---
 title: loloicci.dev
-description: loloicci の技術メモと書き散らかしの保存場所。Blockchain/TypeSystem/OSS
+description: loloicci の技術メモと書き散らかしの Blog の保存場所。
 author: loloicci
 created_at: 2021-04-02
 modified_at: 2021-04-02
@@ -8,7 +8,7 @@ robots: index,follow
 ---
 
 ## loloicci.dev
-loloicci の技術メモと書き散らかしの保存場所。  
+loloicci の技術メモと書き散らかしの Blog の保存場所。  
 誤りや誤字脱字にお気づきの場合は
 [@loloicci](https://twitter.com/loloicci) への
 DM や
