@@ -13,4 +13,4 @@ loloicci の技術メモと書き散らかしの保存場所。
 [@loloicci](https://twitter.com/loloicci) への
 DM や
 [GitHub Repository](https://github.com/loloicci/loloicci-dev-source) の
-Issue/PR で報告していただけると幸いです。
+Issue/PR で報告していただけると嬉しいです。
