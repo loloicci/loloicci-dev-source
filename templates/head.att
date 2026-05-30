@@ -15,5 +15,5 @@ templates: {}
 <meta property="og:site_name" content="loloicci.dev" />
 <meta property="og:description" content="{page.header.description}" />
 <meta property="og:image" content="https://loloicci.dev/style/loloicci2026-ico.png" />
-<link rel="shortcut icon" href="/style/loloicci2026-icon.png">
+<link rel="shortcut icon" href="/style/loloicci2026-ico.png">
 <link rel="stylesheet" href="/style/pico-classless.css">
